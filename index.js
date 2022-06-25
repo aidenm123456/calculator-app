@@ -1,6 +1,8 @@
 let inputString = "";
 let inputArray = [];
 
+
+
 function createInputArray(input) {
     
     if(input.includes("+")) {
@@ -148,4 +150,10 @@ function multiplication(num1, num2) {
 
 function division(num1, num2) {
     return (num1 / num2);
+}
+
+
+function fullCalculation() {
+    createInputArray(inputString);
+    operate(inputArray);
 }
